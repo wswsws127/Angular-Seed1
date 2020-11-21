@@ -1,0 +1,13 @@
+<div class="header">
+  <div class="item">
+    <h1>
+      Welcome to {{ title }}!
+    </h1>
+  </div>
+  <div class="item" *ngIf="isLogin">
+    <a (click)="logOut()">logout</a>
+  </div>
+</div>
+<div class="viewHeight">
+  <router-outlet></router-outlet>
+</div>
